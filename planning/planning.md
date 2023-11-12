@@ -45,6 +45,18 @@ Golang + Gin
 
 ## setting up connections
 
+### db to use?
+
+    research reasons for using different dbs
+
+        mongodb = non-relational
+        mysql = relational
+
+        PostgreSQL = mysql but less bad = the one im using
+
+        a lot of my data is relational so i think it would be a good
+        idea to use a relational database
+
 ### JSON format from database?
 
     ask aurora, re the JSON format thing he mentioned was in his airplane game back end
@@ -54,10 +66,7 @@ Golang + Gin
 
     user
         POST signup
-            Auth 
-                pull user data from other platforms on connection?
-                    routing responsibility -> redirect to platform for auth
-                        send data as headers for create user? 
+            
         POST login
         DELETE removeUser
         GET me
@@ -93,6 +102,12 @@ Golang + Gin
 
             return games = [game]
 
+### auth middleware
+
+    Auth 
+        pull user data from other platforms on connection?
+            routing responsibility -> redirect to platform for auth
+                send data as headers for create user? 
 
 ### Database
 
@@ -149,19 +164,16 @@ Golang + Gin
 
         early dev = before auth finalized
             use fake users
-        late dev = after auth
+        late dev = after auth = front end login/signin complete
             use real user from dev team (me lol) 
 
 ## fill in the lines
 
 ### CRUD ops
 
-    Auth 
-        pull user data from other platforms on connection?
-            routing responsibility -> redirect to platform for auth
-                send data as headers for create user? 
+    depends on db and interface package?
 
-
+    PostgreSQL
 
 ### Routing
 
@@ -178,5 +190,8 @@ Golang + Gin
 ## ideas for future dev
 
     recommendation algorithm for games and friends
+
+    front-end
+
     forum
     official events/mixers
