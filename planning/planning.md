@@ -25,7 +25,6 @@ Golang + Gin
         game
             id
             title
-            platforms [platform]
             prices [gamePlatformPrices]
 
         platform
@@ -59,8 +58,7 @@ Golang + Gin
 
 ### JSON format from database?
 
-    ask aurora, re the JSON format thing he mentioned was in his airplane game back end
-        func to upsert to JSON?
+    stdlib should have a toJSON func
 
 ### Endpoints
 
